@@ -14,7 +14,7 @@ const FormularioAprendiz = ({ form, setForm, onCrear, loading }) => {
   return (
     <Paper elevation={4} sx={{ p: 2, mb: 3, border: "1px solid #334155", bgcolor: "background.paper" }}>
       <Typography sx={{ mb: 2, fontWeight: 600, color: "text.primary" }}>Crear aprendiz</Typography>
-      <Stack direction={{ xs: "column", md: "row" }} spacing={2} sx={{ flexWrap: "wrap", gap: 2 }}>
+      <Stack direction={{ xs: "column", md: "srs" }} spacing={2} sx={{ flexWrap: "wrap", gap: 2 }}>
         <TextField label="Nombre" value={form.nombre}
           onChange={(e) => setForm({ ...form, nombre: e.target.value })} sx={{ ...inputSX, flex: 1.2 }} />
         <TextField label="Apellido" value={form.apellido}
